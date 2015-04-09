@@ -10,7 +10,7 @@ Then add any device trees/kernels you need to a file (one XML for each device) a
 
 Once added:
 ````
-repo sync -c --no-tags
+repo sync
 ````
 Done
 
