@@ -1,16 +1,16 @@
 #Setting up a minimal tree for building TWRP
-##Android 5.1 branch
-
+##Android 6.0 branch
+This repo is ~2.6GB
 ###To initialize the main repository:
 
 ````
-repo init -u https://github.com/notyal/twrp_recovery_manifest.git -b android-5.1
+repo init -u https://github.com/marlontoe/recovery_manifest.git -b android-6.0
 ````
-Then add any device trees/kernels you need to a file (one XML for each device) and add them to the .repo/local_manifests folder of your initialized repo folder.
+Then add any recovery/device trees/kernels you need to a file (one XML for each device) and add them to the .repo/local_manifests folder of your initialized repo folder.
 
 Once added:
 ````
-repo sync -c --no-tags
+repo sync
 ````
 Done
 
@@ -19,5 +19,6 @@ To build recovery:
 . build/envsetup.sh
 lunch (devicename)
 make installclean
-time make recoveryimage showcommands
+time make recoveryimage
 ````
+
